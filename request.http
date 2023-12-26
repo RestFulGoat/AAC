@@ -1,0 +1,44 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcwMzQyNjM1NywiZXhwIjoxNzA2MDE4MzU3fQ.3e6Xg6WOeFtCpeBkY7WRHSFu6WOtsyo_HrIZvHTzcVE
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "Azerty1234!"
+} 
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+
+{
+    "email": "test@test.com",
+    "password": "Azerty1234!"
+}    
+###
+GET http://localhost:3000/users
+Authorization: Bearer {{token}}
+
+
+###
+GET http://localhost:3000/tasks
+Authorization: Bearer {{token}}
+###
+POST http://localhost:3000/tasks
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "title": "Faire le projet de node js",
+    "description": "Respecter la norme RESTFULL"
+} 
+
+###
+PUT http://localhost:3000/tasks/did/2
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "category": "done"
+}
