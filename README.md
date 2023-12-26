@@ -12,7 +12,9 @@ Ce projet est composé de plusieurs routes:
 > TOUTES CES ROUTES NECESSITE DE FOURNIR LE TOKEN JWT SAUF POUR LA ROUTE:
 > **/login**
 
+
 ## - Route de **index.js**
+
 PUT:
  /login: pour se connecter et reçevoir son jeton jwt
 
@@ -21,7 +23,10 @@ PUT:
         "password": ""
     }
 
+
+
 ## Routes de task.js
+
 GET:
 /tasks : récupérer les taches
 PUT:
@@ -30,6 +35,7 @@ PUT:
     {
                 "category": "done"
     }
+
 
 ## Routes de user.js
 
@@ -48,6 +54,7 @@ PUT:
 	 - /users/:id : supprimer un utilisateur avec son id
  - PATCH
 	 - changer le mot de passe ou le user en fonction de l'id
+
 
 
 # Nous tenons à remercier notre professeur qui nous a fourni la connaissance nécessaire à réaliser ce projet
