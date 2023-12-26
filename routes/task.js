@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const Dop = require("../../../../Desktop/projet-rest/models/Do");
-const Did = require("../../../../Desktop/projet-rest/models/Did");
-const Done = require("../../../../Desktop/projet-rest/models/Done");
-const checkAuth = require("../../../../Desktop/projet-rest/middlewares/checkAuth");
+const Dop = require("../models/Do");
+const Did = require("../models/Did");
+const Done = require("../models/Done");
+const checkAuth = require("..//middlewares/checkAuth");
 const router = new Router();
 
 router.use(checkAuth());
